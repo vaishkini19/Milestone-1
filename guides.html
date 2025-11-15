@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kudla Guides</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff7e6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff9000, #ffc246);
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .guide-container {
+      width: 90%;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .guide-card {
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .guide-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .guide-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .guide-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .guide-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff8800;
+    }
+
+    .expertise {
+      font-size: 15px;
+      color: #444;
+      margin: 8px 0;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #ff9000;
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+    }
+
+    .contact-btn:hover {
+      background: #ff6a00;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>Meet Your Kudla Guides</header>
+
+<div class="guide-container">
+
+  <div class="guide-card">
+    <img src="https://nettv4u.com/imagine/02-01-2023/arjun-shetty.jpg">
+    <div class="guide-info">
+      <div class="guide-name">Arjun Shetty</div>
+      <div class="expertise">Beach Tours • Sunsets • Local Food Spots</div>
+      <a href="#" class="contact-btn">Contact Guide</a>
+    </div>
+  </div>
+
+  <div class="guide-card">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.OoSWdhTVcIJY03BzFbMYZQAAAA?pid=Api&P=0&h=180">
+    <div class="guide-info">
+      <div class="guide-name">Meera Rao</div>
+      <div class="expertise">Temples • Culture • Heritage Sites</div>
+      <a href="#" class="contact-btn">Contact Guide</a>
+    </div>
+  </div>
+
+  <div class="guide-card">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.p2TXnSksoJOU1v2DG_RiXAAAAA?pid=Api&P=0&h=180">
+    <div class="guide-info">
+      <div class="guide-name">Roshan D'Souza</div>
+      <div class="expertise">Adventure Spots • Waterfalls • Trekking</div>
+      <a href="#" class="contact-btn">Contact Guide</a>
+    </div>
+  </div>
+
+  <div class="guide-card">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.0Dh9sic79PqPLO06-lhXQAHaE1?pid=Api&P=0&h=180">
+    <div class="guide-info">
+      <div class="guide-name">Sana Poojary</div>
+      <div class="expertise">Food Trails • Cafes • Local Cuisine</div>
+      <a href="#" class="contact-btn">Contact Guide</a>
+    </div>
+  </div>
+
+</div>
+<script src="script.js"></script>
+<script src="post.js"></script>
+
+</body>
+</html>

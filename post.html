@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma Kudla – Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Travel Story</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="guides.html">Guides</a>
+    </nav>
+</header>
+
+<section class="section">
+    <div id="postContainer" class="post-container">
+        <h2 id="postTitle"></h2>
+        <p id="postMeta" class="post-meta"></p>
+        <img id="postImage" class="post-image" alt="Post image">
+        <p id="postContent"></p>
+    </div>
+</section>
+
+<section class="section">
+    <h3>Comments</h3>
+    <div id="commentList" class="comment-list"></div>
+
+    <div class="comment-form">
+        <input type="text" id="commentInput" placeholder="Write a comment...">
+        <button onclick="addComment()">Post</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Namma Kudla Travel Blog</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

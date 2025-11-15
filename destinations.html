@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Destinations - Namma Kudla</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff7e6;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff9000, #ffc246);
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .section-title {
+      margin: 40px 20px 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff8800;
+      text-align: left;
+    }
+
+    .horizontal-list {
+      display: flex;
+      overflow-x: auto;
+      padding: 20px;
+      gap: 18px;
+      scroll-behavior: smooth;
+    }
+
+    .place-card {
+      min-width: 220px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s forwards;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .place-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      transition: transform 0.4s ease;
+    }
+
+    .place-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .place-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .place-info {
+      padding: 12px;
+      text-align: center;
+      font-weight: bold;
+      color: #444;
+    }
+
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff9000;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      font-size: 16px;
+      border-radius: 40px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    #topBtn:hover {
+      background: #ff6a00;
+    }
+  </style>
+</head>
+
+<body>
+  <header>Explore Kudla – Destinations</header>
+
+  <!-- Beaches -->
+  <div class="section-title">Beautiful Beaches</div>
+  <div class="horizontal-list">
+    <div class="place-card"><img src="http://aroundmangalore.com/wp-content/uploads/2014/01/Tannirbhavi-2.png"><div class="place-info">Tannirbhavi Beach</div></div>
+    <div class="place-card"><img src="https://mangalore-tourism.com/wp-content/uploads/2025/07/beach_tour.jpg"><div class="place-info">Panambur Beach</div></div>
+    <div class="place-card"><img src="https://www.holidify.com/images/cmsuploads/compressed/Someshwara-Beach_20200605162022.jpg"><div class="place-info">Someshwara Beach</div></div>
+    <div class="place-card"><img src="https://www.solitarytraveller.com/wp-content/uploads/2022/12/two_new_indian_beaches_certified_as_blue_beach_kasarkod_beach-1024x768.png"><div class="place-info">Kasarkod Beach</div></div>
+  </div>
+
+  <!-- Malls -->
+  <div class="section-title">Malls to Explore</div>
+  <div class="horizontal-list">
+    <div class="place-card"><img src="https://4.bp.blogspot.com/_jTEO63-CIhM/S9Qg-svPm6I/AAAAAAAAB1Y/8mszs7oB4nU/s1600/CityCentreMallMangalore2.JPG"><div class="place-info">City Center Mall</div></div>
+    <div class="place-card"><img src="https://1.bp.blogspot.com/-FGXTxs7vUyw/X6zpfXyUI6I/AAAAAAAAAG8/NcAqucsXSgclT-hoyHCsY1RB042lG2TjACLcBGAsYHQ/s640/forum-fiza-mall-mangalore-20170718035243.jpg"><div class="place-info">Forum Fiza Mall</div></div>
+    <div class="place-card"><img src="https://indiafamousfor.com/wp-content/uploads/2023/12/Bharath-Mall-Mangalore.jpg"><div class="place-info">Bharath Mall</div></div>
+  </div>
+
+  <!-- Food Spots -->
+  <div class="section-title">Best Eating Places</div>
+  <div class="horizontal-list">
+    <div class="place-card"><img src="https://ghazal.net.au/wp-content/uploads/2016/07/BCP_3513-1024x613.jpg"><div class="place-info">Ghazal Restaurant</div></div>
+    <div class="place-card"><img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2022/04/Gajalee-Restaurant-Mumbai.jpg?resize=1080%2C810&ssl=1"><div class="place-info">Gajalee</div></div>
+    <div class="place-card"><img src="https://i0.wp.com/foodntravel.in/wp-content/uploads/2022/12/4-5.jpg"><div class="place-info">Machali</div></div>
+    <div class="place-card"><img src="https://hblimg.mmtcdn.com/content/hubble/img/manglore/mmt/activities/m_Pallkhi-3_l_480_640.jpg"><div class="place-info">Pallkhi</div></div>
+  </div>
+
+  <!-- Temples -->
+  <div class="section-title">Top Temples in Mangalore</div>
+  <div class="horizontal-list">
+    <div class="place-card"><img src="http://www.transindiatravels.com/wp-content/uploads/managaladevi-temple-1.jpg"><div class="place-info">Mangaladevi  Temple</div></div>
+    <div class="place-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjglqysZeVOvi8N-DVWzLfiTOBpH1Z8t56nygw3hrzWewnJpWRMusfPp1a4-Bsm7VTtQGgWHH4TAPmwoCsDBs_Y1sfna5EH5IFKSzoQ7faaZtUqClDPxIqnM7zPHhRaQ0bjUtiQ3tGcFemrMiGal-2TqGXO0jMMvY9km_cdja41DRYgtmFBEwcNx2AiDg/s1000/WhatsApp%20Image%202022-11-04%20at%2015.27.48.jpg"><div class="place-info">Kudroli Temple</div></div>
+    <div class="place-card"><img src="http://www.mangaloretourism.in/images/places-to-visit/header/shree-durgaparameshwari-temple-kateel-mangalore-tourism-entry-fee-timings-holidays-reviews-header.jpg"><div class="place-info">Kateel Durgaparameshwari</div></div>
+    <div class="place-card"><img src="https://xploreall.com/wp-content/uploads/2021/07/Sri-Venkatramana-Temple-Mangalore.jpg"><div class="place-info">Sri LaxmiVenkatrama temple</div></div>
+  </div>
+
+  <button id="topBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑ Top</button>
+<!-- Map -->
+    <section class="section">
+        <h2 class="section-title">Explore Kudla on Map</h2>
+        <div id="mapHome" class="map"></div>
+        <div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81152.60884796051!2d74.80105554782492!3d12.91383090078394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827bbc7a74fcfe64!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1763205245527!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">"
+        width="700px" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+    </section>
+  <script>
+    const topBtn = document.getElementById("topBtn");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) topBtn.style.display = "block";
+      else topBtn.style.display = "none";
+    });
+  </script>
+  <!-- JS Files -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
